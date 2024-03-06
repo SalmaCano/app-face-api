@@ -22,6 +22,7 @@ async function onPlay() {
     const dims = faceapi.matchDimensions(canvas, video, true);
     const resizedResults = faceapi.resizeResults(fullFaceDescriptions, dims);
 
+   
     faceapi.draw.drawDetections(canvas, resizedResults);
     faceapi.draw.drawFaceLandmarks(canvas, resizedResults);
     faceapi.draw.drawFaceExpressions(canvas, resizedResults, 0.05);
