@@ -16,7 +16,7 @@ const MODEL_URL = "./weights";
     .withFaceDescriptors()
     .withFaceExpressions();
 
-  //faceapi.draw.drawDetections(canvas, fullFaceDescriptions);
+  faceapi.draw.drawDetections(canvas, fullFaceDescriptions);
   faceapi.draw.drawFaceLandmarks(canvas, fullFaceDescriptions);
-  //faceapi.draw.drawFaceExpressions(canvas, fullFaceDescriptions, 0.05);
+  faceapi.draw.drawFaceExpressions(canvas, fullFaceDescriptions, 0.05);
 })();
